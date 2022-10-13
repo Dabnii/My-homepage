@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div a class="main-page" id="main-page">
+      <div class="main-text">
+        <p id="main-me-t"></p>
+        <h1>
+          console&#46;log<br />
+          ("<span id="strok-t">해</span>답을 찾는<br />
+          프론트엔드 개발자")<br />
+          이다빈<span id="strok-t">입니다&#46;</span>
+        </h1>
+      </div>
+      <div class="side">
+        <div class="circle">
+          <img id="circle" src="img/circle.svg" alt="circle" />
+        </div>
+        <div class="arrow">
+          <a href="#about-page-here">
+            <img id="arrows" src="img/arrow.svg" alt="arrow"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="logo">
+        <a href="#main-page"
+          ><img src="img/circle.svg" alt="" class="logo" width="50px"
+        /></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#main-page">Home</a></li>
+        <li><a href="#about-page-here">Information</a></li>
+        <li><a href="#projs-page">Projects</a></li>
+        <li><a href="#about-page-here">contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <div class="about-page" id="about-page-here">
+      <div class="left">
+        <h2 id="left-t">About</h2>
+        <h2 id="info">
+          이다빈<br />
+          Front-End Dev.
+        </h2>
+      </div>
+      <div class="middle">
+        <div class="m-info" href="#projs-page">
+          <p id="first-p"></p>
+          <h3>
+            console&#46;log<br />
+            (“해답을 찾는 프론트엔드 개발자”)<br />
+            이다빈
+          </h3>
+          <p id="second-p"></p>
+          <p></p>
+          <h3>ENTJ</h3>
+          <p></p>
+          <h3 class="opt">
+            <div class="bar"></div>
+            코드 한 줄로 세상에 이로움을 더하는, <br />
+            매일 성장하는 개발자.
+          </h3>
+          <p></p>
+          <h3 class="opt">
+            Life Goal <br />
+            : 지하철에서 내가 개발한 서비스 이용자를 마주치기 <br />
+            : 빈 마음으로 최선을 다하여 꾸준히 성장하기
+          </h3>
+        </div>
+      </div>
+      <div class="right">
+        <div class="rt">
+          <h3 id="contact">
+            <a href="https://github.com/BongsikB"
+              ><img src="./img/github-icon.png" id="git-img" /></a
+            ><br />
+            <a href="https://velog.io/@0713vin">
+              <img src="./img/velog.png" id="velog-img" /></a
+            ><br />
+            <a href="#"><img src="./img/gmail-icon.png" id="gmail-img" /></a
+            ><br />
+          </h3>
+        </div>
+        <a href="#projs-page"
+          ><img id="arrows" src="img/arrow.svg" alt="arrow"
+        /></a>
+      </div>
+    </div>
+    <div class="page-container" id="projs-page">
+      <div class="arrow-l">
+        <a href="#about-page-here"
+          ><img id="arrow-l" src="img/arrow up.svg" alt="arrow"
+        /></a>
+      </div>
+      <div class="proj-page">
+        <div class="container-1" id="pj">
+          <h1 id="title">
+            New Ink <img src="img/thumbs-up.png" id="thumb-img" />
+          </h1>
+
+          <h5>Java script Canavas api</h5>
+          <span id="proj-btn">
+            <button class="btn1">HTML</button>
+            <button class="btn2">CSS</button>
+            <button class="btn3">Java Script</button>
+          </span>
+          <div class="proj-thn1">
+            <img src="img/Newink.png" alt="newink" id="thumb" />
+
+            <div class="comment-box">
+              <input type="text" placeholder="username" />
+              <input type="text" placeholder="comment here" />
+              <button class="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div class="container-2" id="pj">
+          <p></p>
+          <h1 id="title">Proj 2</h1>
+          <h5>Coming soon!</h5>
+          <span id="proj-btn">
+            <button class="btn1">HTML</button>
+            <button class="btn2">CSS</button>
+            <button class="btn3">Java Script</button>
+          </span>
+          <div class="proj-thn1">
+            <img src="img/soon.png" alt="soon" id="thumb" />
+          </div>
+        </div>
+        <div class="container-3" id="pj">
+          <p></p>
+          <h1 id="title">Proj 3</h1>
+          <h5>Coming soon!</h5>
+          <span id="proj-btn">
+            <button class="btn1">HTML</button>
+            <button class="btn2">CSS</button>
+            <button class="btn3">Java Script</button>
+          </span>
+          <div class="proj-thn1">
+            <img src="img/soon.png" alt="soon" id="thumb" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
+ 
