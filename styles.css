@@ -30,9 +30,7 @@ h4 {
 }
 h5 {
   font-size: 1rem;
-  /* font-weight: 200; */
   margin: 0%;
-  padding: 0%;
 }
 /* - */
 /* Nav */
@@ -139,21 +137,6 @@ nav {
   transform: rotate(45deg) translate(-5px, -5px);
 }
 /* Nav images in square BnW*/
-/* .github,
-.velog,
-.mail {
-  all: unset;
-  width: 2vw;
-  height: 2vw;
-  padding: 1vw;
-  text-align: center;
-  justify-content: center;
-  background-color: black;
-  color: white;
-  font-weight: 500;
-  cursor: pointer;
-  transition: opacity linear 0.1s;
-} */
 
 /* End of Nav */
 
@@ -202,12 +185,11 @@ nav {
 /* 2nd about page a.k.a. info */
 
 .about-page {
-  /* position: static;*/
   padding-top: 12rem;
-  margin: 4rem;
-  height: 100vw;
+  margin: 3rem;
+  height: 65vh;
   justify-content: center;
-  gap: 3rem;
+  gap: 9rem;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
@@ -226,12 +208,6 @@ nav {
 .middle {
   line-height: 2rem;
 }
-
-/* #line {
-  width: 1200px;
-  height: 0.1vw;
-  background-color: black;
-} 이건뭐지 ?*/
 
 .m-info {
   padding-top: 8rem;
@@ -286,14 +262,14 @@ nav {
 #arrows:hover {
   top: 2vw;
 }
-
+/* About page media query*/
 @media screen and (max-width: 768px) {
   .about-page {
     padding-top: 8rem;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     margin: 1rem;
-    height: 100vh;
+    height: 65vh;
     display: flex;
     flex-direction: row;
   }
@@ -303,7 +279,7 @@ nav {
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   h3 {
@@ -345,18 +321,12 @@ nav {
   }
 
   .right {
-    padding-top: 8rem;
+    padding: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
 
-  .right {
-    padding-top: 8rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
   #contact {
     flex-direction: column;
     display: flex;
@@ -373,7 +343,7 @@ nav {
 /* 3rd proj page */
 
 .page-container {
-  height: auto;
+  height: 65vh;
   padding: 2rem;
   display: flex;
   flex-wrap: nowrap;
@@ -401,12 +371,12 @@ nav {
 }
 #pj {
   padding: 2rem;
-  margin-bottom: 3rem;
-  gap: 1rem;
-  width: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   border-radius: 2rem;
-  box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5),
-    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+  box-shadow: inset -10px -10px 15px rgb(255 255 255 / 50%),
+    inset 10px 10px 15px rgb(70 70 70 / 12%);
 }
 /* proj title*/
 #title {
@@ -419,20 +389,19 @@ nav {
 .btn3 {
   all: unset;
   font-size: 1rem;
-  font-weight: 300;
-  padding: 0.8rem;
+  font-weight: 100;
+  padding: 0.6rem;
   text-align: center;
   background-color: black;
   color: white;
-  cursor: none;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   transition: opacity linear 0.1s;
 }
 
 #proj-btn {
   align-items: flex-start;
-  display: inline-flex;
-  margin: 2rem 0 3rem 0;
+  display: flex;
+  margin: 1rem 0 1rem 0;
   gap: 0.7rem;
 }
 
@@ -448,13 +417,30 @@ nav {
   overflow: hidden;
 }
 
-.comment {
-  text-align: center;
+.comment-box {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+}
+
+input {
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.1rem solid black;
+}
+
+input:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.submit {
+  appearance: none;
+  border: none;
+  background-color: black;
+  color: aliceblue;
+  font-family: inherit;
   border-radius: 1rem;
-  width: 5rem;
-  display: flex;
-  justify-items: center;
-  gap: 3rem;
 }
 /* - */
 
@@ -472,4 +458,3 @@ nav {
   filter: grayscale(0%);
   transform: scale(1.1);
 }
- 
