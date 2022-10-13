@@ -1,4 +1,4 @@
-# <a href="https://bongsikb.github.io/my-homepage/">🏡 Welcome to Home page🏡</a>
+# <a href="https://bongsikb.github.io/My-homepage/">🏡 Welcome to Home page🏡</a>
 
 ## 📌 HTML & CSS
 
