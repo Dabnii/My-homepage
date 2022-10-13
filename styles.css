@@ -11,28 +11,35 @@ body {
   );
 }
 /* All font set*/
+/* Biggest font : Main page title*/
 h1 {
   font-size: 3.5rem;
   font-weight: bold;
 }
+/* Second biggest font*/
+/* About page only*/
 h2 {
   font-size: 3rem;
 }
-
+/*About page font*/
 h3 {
   font-size: 1rem;
   font-weight: 300;
   color: grey;
 }
-
+/*Project 설명 텍스트*/
 h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 0;
+  padding: none;
 }
+/*Project 버튼 텍스트*/
 h5 {
   font-size: 1rem;
   margin: 0%;
 }
-/* - */
+/* - - - - End of default set - - - - -  */
 /* Nav */
 nav {
   padding: 2rem;
@@ -82,6 +89,7 @@ nav {
   margin: 5px;
   transition: all 0.3s ease;
 }
+
 @media screen and (max-width: 768px) {
   .nav-links {
     width: 60%;
@@ -136,12 +144,10 @@ nav {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -5px);
 }
-/* Nav images in square BnW*/
 
-/* End of Nav */
+/* - - - - End of Nav - - - - */
 
 /* 1st Main page a.k.a Home*/
-
 .main-page {
   display: flex;
   height: 85vh;
@@ -152,6 +158,13 @@ nav {
   align-items: center;
 }
 
+/* font stroke*/
+#strok-t {
+  -webkit-text-stroke: 0.1vw black;
+  -webkit-text-fill-color: transparent;
+  color: rgb(0, 0, 0, 0);
+}
+
 @media screen and (max-width: 768px) {
   #circle {
     width: 12vw;
@@ -159,7 +172,7 @@ nav {
 }
 /* right side circle + arrow down */
 
-.side .arrow {
+.main-page-side .arrow {
   display: flex;
   justify-content: center;
 }
@@ -174,19 +187,13 @@ nav {
   }
 }
 
-/* font stroke*/
-#strok-t {
-  -webkit-text-stroke: 0.1vw black;
-  -webkit-text-fill-color: transparent;
-  color: rgb(0, 0, 0, 0);
-}
-/* End of 1st page */
+/* - - - - End of 1st page - - - -  */
 
-/* 2nd about page a.k.a. info */
+/* - - - - 2nd about page a.k.a. info - - - - */
 
 .about-page {
   padding-top: 12rem;
-  margin: 3rem;
+  margin: 3.5rem;
   height: 65vh;
   justify-content: center;
   gap: 9rem;
@@ -195,13 +202,13 @@ nav {
   flex-direction: row;
 }
 
-.left {
+.left-box {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
 
-#info {
+#left-t-p {
   text-align: right;
 }
 
@@ -209,29 +216,24 @@ nav {
   line-height: 2rem;
 }
 
-.m-info {
-  padding-top: 8rem;
-}
-
-.second-p {
+.middle-t-second-p {
   gap: 12rem;
 }
 
-.bar {
+.middle-t-second-p-bar {
   background-color: black;
   width: 2.8rem;
   height: 0.05rem;
   margin-bottom: 0.3rem;
 }
 
-.opt {
+.middle-t-second-p-opt {
   font-style: normal;
   font-weight: 400;
   color: black;
 }
 
-.right {
-  padding-top: 8rem;
+.about-page-right-container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -260,8 +262,9 @@ nav {
 }
 
 #arrows:hover {
-  top: 2vw;
+  top: 2rem;
 }
+
 /* About page media query*/
 @media screen and (max-width: 768px) {
   .about-page {
@@ -292,35 +295,32 @@ nav {
     font-size: 0.8rem;
   }
 
-  .left {
+  .left-box {
     display: flex;
     flex-direction: column;
   }
   .middle {
     line-height: none;
   }
-  .m-info {
-    padding-top: 0%;
-  }
 
-  .second-p {
+  .middle-t-second-p {
     gap: 0%;
   }
 
-  .bar {
+  .middle-t-second-p-bar {
     background-color: black;
     width: 2.8rem;
     height: 0.05rem;
     margin-bottom: 0.3rem;
   }
 
-  .opt {
+  .middle-t-second-p-opt {
     font-style: normal;
     font-weight: 400;
     color: black;
   }
 
-  .right {
+  .right-container {
     padding: 0;
     display: flex;
     align-items: center;
@@ -342,7 +342,7 @@ nav {
 /* - - - End of 2nd page- - - - */
 /* 3rd proj page */
 
-.page-container {
+.project-page {
   height: 65vh;
   padding: 2rem;
   display: flex;
@@ -351,25 +351,25 @@ nav {
 }
 
 /* up arrow*/
-#arrow-l {
+#project-page-arrow {
   margin: 0 4rem 0 4rem;
   width: 0.6rem;
   position: relative;
   top: 1rem;
   transition: top ease 0.5s;
 }
-#arrow-l:hover {
+#project-page-arrow:hover {
   top: 0px;
 }
 /* Projs thumbnails */
-.proj-page {
+.project-container {
   overflow: scroll;
   display: flex;
   flex-direction: row;
   width: 85rem;
   gap: 2rem;
 }
-#pj {
+#project-box {
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -378,7 +378,8 @@ nav {
   box-shadow: inset -10px -10px 15px rgb(255 255 255 / 50%),
     inset 10px 10px 15px rgb(70 70 70 / 12%);
 }
-/* proj title*/
+
+/* project title*/
 #title {
   margin: 0%;
   padding: 0%;
@@ -442,7 +443,6 @@ input:nth-child(1) {
   font-family: inherit;
   border-radius: 1rem;
 }
-/* - */
 
 #thumb {
   width: 20rem;
@@ -458,3 +458,4 @@ input:nth-child(1) {
   filter: grayscale(0%);
   transform: scale(1.1);
 }
+/* - */
