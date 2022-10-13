@@ -1,4 +1,5 @@
-# <a href="https://bongsikb.github.io/My-homepage/">🏡 Welcome to Home page🏡</a>
+# <p align=center> <a href="https://bongsikb.github.io/My-homepage/">🏡 Welcome to Home page🏡</a>
+<p align=center> It's a responsive website! ✨
 
 ## 📌 HTML & CSS
 
