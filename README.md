@@ -22,7 +22,7 @@
 
 ## 📌 Java Script
 
-- Responsible Nav bar JS
+- responsive Nav bar JS
 - `🍔 Hamburger Menu`
 - ⚒️ Comment & like function `👩‍💻In progress`
 
