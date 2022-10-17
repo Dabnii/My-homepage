@@ -1,4 +1,4 @@
-# <p align=center> <a href="https://bongsikb.github.io/My-homepage/">🏡 Welcome to my home page🏡</a>
+# <p align=center> <a href="https://bongsikb.github.io/My-homepage/">🏡 Welcome to my home page 🏡</a>
 <p align=center> It's a responsive website! ✨
 
 ## 📌 HTML & CSS
@@ -30,7 +30,7 @@
 
 ## 🔁 Flex box | 반응형 사이트 만들기
 
-<a href="https://developer.mozilla.org/ko/docs/Web/CSS/flex">📎 Flex box MDN</a>
+<a href="https://developer.mozilla.org/ko/docs/Web/CSS/flex">📎 Flex box MDN</a> 
 
 스크린 리더의 사이즈에 맞춰 변화하는 반응형 사이트를 구축하였습니다.<br>
 `disply: flex` 과 `rem` 를 사용하는 것이 중요합니다. <br>
